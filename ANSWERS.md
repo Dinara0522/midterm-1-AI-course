@@ -42,7 +42,8 @@ I used ChatGPT as an AI assistant to help interpret the exam instructions, organ
 ### 1d. Decision (at most 150 words)
 
 Chosen candidate: B, k=5
-I choodsed B, k=5 because its annual cost is $12,912.73, within the $15,000 budget. It has higher recall than B, k=3, and their 95% Wilson intervals do not overlap. Recall@5 is 70% for EN (14/20), 75% for RU (15/20), and 70% for KK (14/20). EN and KK have the lowest recall for this choice. Configurations A exceed the annual budget.
+
+I chose B, k=5 because its annual cost is $12,912.73, within the $15,000 budget. It has higher recall than B, k=3, and their 95% Wilson intervals do not overlap. Recall@5 is 70% for EN (14/20), 75% for RU (15/20), and 70% for KK (14/20). EN and KK have the lowest recall for this choice. Configurations A exceed the annual budget.
 (Decision, using your intervals and the budget. Give the recall of your choice for EN, RU and KK separately.)
 
 ### 1e. Next measurement (at most 60 words)
@@ -71,25 +72,30 @@ Safeguards should include role-based access, encryption in transit and at rest, 
 ### Q1
 
 Number: 2.73
+
 Why (at most 40 words): The bill ratio differs from the total-token ratio because input and output tokens have different prices. Output tokens cost six times as much as input tokens, and the two languages have different input/output mixes.
 
 
 ### Q2
 
 Number: 355
+
 Why (at most 40 words): Scaling gives 576 × 263/256 ≈ 592 e5 tokens; 60% is about 355. The sentence starts before the 512-token limit and is short enough to fit, so it can be included. Truncation beyond the limit may be silent.
 
 ### Q3
 
 Number: 45.5%
+
 Why (at most 40 words): Increasing temperature softens the probability distribution without changing the ranking of these tokens. All five tokens still have nonzero sampling probability; temperature changes their relative probabilities, not the candidate set.
 
 ### Q4
 
 Number: 30.4%
+
 Why (at most 40 words): I excluded arithmetic sequences and multiplication because their answers can be derived algorithmically. The birthday and synthetic account-number sets contain one-off facts. A system prompt cannot supply missing factual knowledge or guarantee correct recall.
 
 ### Q5
 
 Number: 4.25
+
 Why (at most 40 words): The model has about 85 tokens per parameter, compared with Chinchilla's 20. By this criterion it is over-trained in tokens relative to its parameter count. Chinchilla argued that models such as GPT-3 were under-trained and could use more training tokens for their size.
